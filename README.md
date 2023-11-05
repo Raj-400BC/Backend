@@ -13,14 +13,14 @@
     </li>
     <li>
         Methods of importing modules : 
-        <li>
-            1. CommonJS - CommonJS is a module system used in Node.js for organizing and structuring code. It uses the 'require' function to import modules and the module.exports or exports object to define what a module exports.
-            
-            eg - const myModule = require('./myModule');
+        
+            * CommonJS - CommonJS is a module system used in Node.js for organizing and structuring code. It uses the 'require' function to import modules and the module.exports or exports object to define what a module exports.
 
-            2. ECMAScript Module - ECMAScript Modules is a standardized module system introduced in modern JavaScript, supported both in browsers and Node.js. It uses the 'import' and 'export' statements for module loading and defining exports.
+            const myModule = require('./myModule');
 
-            eg - import { someFunction } from './myModule.mjs';
+            * ECMAScript Module - ECMAScript Modules is a standardized module system introduced in modern JavaScript, supported both in browsers and Node.js. It uses the 'import' and 'export' statements for module loading and defining exports.
+
+            import { someFunction } from './myModule.mjs';
         </li>
     </li>
 </ul>
