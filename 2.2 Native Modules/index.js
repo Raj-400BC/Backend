@@ -1,4 +1,4 @@
-const fs  = require("fs");
+const fs  = require("node:fs");
 
 fs.writeFile("trail.txt" , "That's how we do it" , (err)=>{
     if (err) throw err;
