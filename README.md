@@ -14,7 +14,7 @@
         
  * CommonJS - CommonJS is a module system used in Node.js for organizing and structuring code. It uses the 'require' function to import modules and the module.exports or exports object to define what a module exports.
 
- ``` const myModule = require('./myModule'); ```
+ ```   const myModule = require('./myModule'); ```
 
 * ECMAScript Module - ECMAScript Modules is a standardized module system introduced in modern JavaScript, supported both in browsers and Node.js. It uses the 'import' and 'export' statements for module loading and defining exports.
 
