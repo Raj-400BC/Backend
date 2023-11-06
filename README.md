@@ -19,4 +19,10 @@
 * ECMAScript Module - ECMAScript Modules is a standardized module system introduced in modern JavaScript, supported both in browsers and Node.js. It uses the 'import' and 'export' statements for module loading and defining exports.
 
 ```   import { someFunction } from './myModule.mjs'; ```
- 
+ # QR Code Generator and Link Storage
+
+This Node.js application allows you to:
+
+1. Get user input for a URL.
+2. Generate a QR code image from the URL using the `qr-image` package.
+3. Store the user-entered URL in a text file, appending it to an existing file if it exists.
