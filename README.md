@@ -26,3 +26,24 @@ This Node.js application allows you to:
 1. Get user input for a URL.
 2. Generate a QR code image from the URL using the `qr-image` package.
 3. Store the user-entered URL in a text file, appending it to an existing file if it exists.
+
+# Creating an Express Server
+
+Steps to create and run a express server :
+
+1. Create a directory.
+2. Create index.js
+3. Initialise NPM.
+4. Install the Express package.
+5. Write Server application in index.js .
+6. Start server.
+
+# HTTP Requests
+
+Request Vocab :
+
+1. Get 
+2. Post 
+3. Put
+4. Patch
+5. Delete
