@@ -47,3 +47,12 @@ Request Vocab :
 3. Put
 4. Patch
 5. Delete
+
+# HTTP Return Codes Cheat Sheet
+
+1. 1** - Hold on
+2. 2** - Here you go 
+3. 3** - Go away 
+4. 4** - You fu*ked up 
+5. 5** - I fu*ked up
+

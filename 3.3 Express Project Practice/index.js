@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-app.get('/Home' , (req,res)=>{
+app.get('/' , (req,res)=>{
     res.send("<h1>Welcome to the Home page</h1>");
 });
 
