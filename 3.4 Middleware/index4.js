@@ -1,7 +1,7 @@
 import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import bodyParser from "body-parser";
+
 
 const app = express();
 const port = 3000;
@@ -20,8 +20,10 @@ app.use(bandNameGenerator)
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
+
 app.post('/submit', (req,res)=>{
-  res.send(`<h1>Welcome to the band</h1><br><br>${bandName}`)
+  // bandName = req.body["street"] + req.body["pet"];         we can also take the key value of the form as this without actually using the above function (line 13-18)
+  res.send(`<h1>Welcome to the band</h1><br><br><strong>${bandName}</strong>`)
   console.log(req.body);
 })
 
