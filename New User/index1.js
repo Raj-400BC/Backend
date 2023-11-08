@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 const app = express();
 const port = 3100;
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const __userFile = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.urlencoded({extended:true}));
 
@@ -14,12 +15,13 @@ app.get('/' , (req,res)=>{
 })
 
 app.post('/check' , (req , res)=>{
-    // fs.appendFile('${req.body.email}.txt' , req.body.password )
-    // fs.writeFile(`${req.body.email}.txt` , req.body.password , (err)=>{
-    //     if (err) throw err;
-    //     console.log("The file has been saved");
-    // });
-    res.send('file created');
+    // Next working  point : -- checking if a txt file is present with the 'email' name from login page in the server or not.
+    if (__userFile + `/public/${req.body.email}` === __dirname + '/Backend/New User'){
+        res.send('File is present')
+    }  
+    else{
+        res.send('File Missing');
+    }
 })
 
 app.listen(port , ()=>{
