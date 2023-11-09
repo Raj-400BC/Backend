@@ -88,3 +88,11 @@ If the current middleware function does not end the request-response cycle, it m
 
 - You are correct , the above can sometimes be implemented as third-party middlewares but the
   <strong>primary distinction</strong> is that some middlewares are more specialized and crucial to the core functionality of an application, which is why they are often highlighted separately. 
+
+# EJS Tags
+
+1. <%= <strong>Variable</strong> %> -  JS Output
+1. <% <strong>Console.log("hello")</strong> %> -  JS Output
+1. <%= <strong>Variable</strong> %> -  JS Output
+1. <%= <strong>Variable</strong> %> -  JS Output
+1. <%= <strong>Variable</strong> %> -  JS Output
