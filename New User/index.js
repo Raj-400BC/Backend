@@ -14,12 +14,16 @@ app.get('/' , (req,res)=>{
 })
 
 app.post('/check' , (req , res)=>{
-    // fs.appendFile('${req.body.email}.txt' , req.body.password )
-    fs.writeFile(`${req.body.email}.txt` , req.body.password , (err)=>{
+    if (fs.existsSync(`${req.body.email}.txt`)) {
+       
+        res.send(`<h1>Please choose a different mail</h1>`);
+    }
+    else {fs.writeFile(`${req.body.email}.txt` , req.body.password , (err)=>{
         if (err) throw err;
         console.log("The file has been saved");
     });
-    res.send('file created');
+    res.send(`<h1>Welcome ${req.body.name}.</h1>`);
+    }
 })
 
 app.listen(port , ()=>{
