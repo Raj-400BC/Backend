@@ -93,7 +93,7 @@ If the current middleware function does not end the request-response cycle, it m
 
 1. <%= <strong>Variable</strong> %> -  JS Output
 1. <% <strong>Console.log("hello")</strong> %%> -  JS Execute
-1. <%-<strong><h>Hello<h1></strong> %> -  Render HTML
+1. <%-<strong><h>Hello<h></strong> %> -  Render HTML
 1. <%%  %%> -  Show <% or %>
 1. <%# <strong>This is a comment</strong> %%> -  Stop Execution
 1. <%- <strong>include("Header.ejs")</strong> %> -  Insert another EJS file
