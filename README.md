@@ -98,3 +98,9 @@ If the current middleware function does not end the request-response cycle, it m
 1. <%# <strong>This is a comment</strong> %%> -  Stop Execution
 1. <%- <strong>include("Header.ejs")</strong> %> -  Insert another EJS file
 
+# API Authentication
+
+0. No Authentication
+1. Basic Authentication
+2. API Key Authorisation
+3. Token Based Authentication
