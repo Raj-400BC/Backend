@@ -104,3 +104,6 @@ If the current middleware function does not end the request-response cycle, it m
 1. Basic Authentication
 2. API Key Authorisation
 3. Token Based Authentication
+
+### What is render rate ?
+- A rate limiter is a mechanism used to control the rate at which a client, user, or system can make requests to a server or API (Application Programming Interface). The primary purpose of rate limiting is to prevent abuse, protect against denial-of-service attacks, and ensure fair usage of resources.
