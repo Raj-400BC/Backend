@@ -19,7 +19,49 @@
 * ECMAScript Module - ECMAScript Modules is a standardized module system introduced in modern JavaScript, supported both in browsers and Node.js. It uses the 'import' and 'export' statements for module loading and defining exports.
 
 ```   import { someFunction } from './myModule.mjs'; ```
- # QR Code Generator and Link Storage
+
+
+ # How to start Expess Server
+
+1. Create directory
+
+ ```   mkdir folder1  ```
+ ```   mkdir folder2 ```
+ ```   cd folder2 ```
+ 
+2. Create index.js
+   
+ ```   touch index.js ```
+    
+3. Intialise NPM
+   
+ ```   npm init -y  ```
+   
+4. Install the Express package (npm i express)
+   
+ ```   npm i express ```
+   
+5. Write server application in index.js
+
+``` import express from "express"; ```
+
+``` const app = express(); ```
+```const port = 3100; ```
+
+```app.get('/',(res,req) =>{```
+ ```   console.log(`Welcome to port ${port}`);})```
+
+```app.listen(port, () => {```
+   ``` console.log(`Server running at port ${port}`);```
+```}) ```
+
+
+10. Start Server (node index.js)
+
+ ```   node index.js ``` </code>
+
+
+# QR Code Generator and Link Storage
 
 This Node.js application allows you to:
 
